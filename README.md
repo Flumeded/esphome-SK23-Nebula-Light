@@ -16,7 +16,8 @@ To open the device, you need to remove three screws hidden under the rubber damp
 
 After removing the screws, you can slightly spread the front part of the device (the side with lenses). However, the spine of the device (where the angle feet are located) has two plastic clamps, which require some force to open. Slide a plastic pick from the lens side along the seam as far as possible, then twist the pick to release the clamps.
 
-> [!TIP] This may feel like you're breaking the device, so proceed cautiously, but be prepared to apply some force.
+> [!TIP] 
+> This may feel like you're breaking the device, so proceed cautiously, but be prepared to apply some force.
 
 ### 2. Preparations
 
@@ -36,7 +37,8 @@ After removing the screws, you can slightly spread the front part of the device 
 
 Connect the following pins to the UART Adapter:
 
-> [!CAUTION] TTL Adapter should be set to 3.3V
+> [!CAUTION] 
+> TTL Adapter should be set to 3.3V  
 > Make sure your device is disconnected from the power plug; the TTL programmer will power the device instead.
 
 | UART | CBU       |
@@ -47,7 +49,8 @@ Connect the following pins to the UART Adapter:
 
 ### 4. Create a Backup Dump of the Current Firmware
 
-> [!NOTE] This step is optional, but without proper backup you will not be able to roll back to the stock firmware.
+> [!NOTE] 
+> This step is optional, but without proper backup you will not be able to roll back to the stock firmware.
 
 It is advised to create two dumps and then esnure they are the same bit-wise. 
 This way you are making sure firmware file was not currupted in the dumping proccess.
