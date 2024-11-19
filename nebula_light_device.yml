@@ -76,12 +76,6 @@ light:
     restore_mode: ALWAYS_OFF
     internal: true
 
-  # - platform: monochromatic
-  #   name: "${device_name} Button LED1"
-  #   id: button_led1
-  #   output: button_led1_pwm
-  #   restore_mode: ALWAYS_OFF
-
 fan:
   platform: speed
   name: "${device_name} Motor"
@@ -111,6 +105,11 @@ switch:
       - light.turn_off: rgb_light
       - light.turn_off: button_led0
       - script.stop: script_turn_off_timer
+
+  - platform: template
+    name: "${device_name} Timer Switch"
+    id: switch_timer
+    restore_mode: ALWAYS_ON
 
 output:
   - platform: libretiny_pwm
@@ -143,19 +142,15 @@ output:
     pin: P1
     inverted: true
 
-  # - platform: libretiny_pwm
-  #   id: button_led1_pwm
-  #   pin: P7
-  #   inverted: true
-
-
 binary_sensor:
   - platform: gpio
     pin:
       number: P14
-      mode: INPUT_PULLDOWN_16
+      mode:
+        input: true
+        pullup: true
       inverted: true
-    name: "${device_name} Button"
+    name: "Button"
 
     # Change the scene on short press/click
     on_click:
@@ -183,8 +178,12 @@ script:
   - id: script_turn_off_timer
     mode: restart
     then:
-      - delay: 1h
-      - switch.turn_off: switch_main
+      - if:
+          condition:
+            switch.is_on: switch_timer
+          then:
+            - delay: 1h
+            - switch.turn_off: switch_main
 
 select:
   platform: template
@@ -297,4 +296,3 @@ select:
             - fan.turn_on:
                 id: motor
                 speed: 10
-

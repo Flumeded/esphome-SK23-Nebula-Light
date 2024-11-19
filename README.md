@@ -1,6 +1,10 @@
-# ESPHome for Tuya SK23 WiFi Nebula Light
+# ESPHome for Tuya SK23/SK20 (CBU) WiFi Nebula Light
 
-This repository contains ESPHome instructions for flashing and a configuration file to use with MOES Tuya SK23 nebula lights. Compared to the SK20 model, the SK23 cannot be flashed with [cloudcutter](https://docs.libretiny.eu/docs/flashing/tools/cloudcutter/). You will need to open the device and manually flash it using a USB UART/USB-TTL adapter for the initial setup. After the initial flash, the device can be updated through Wi-Fi.
+This repository contains ESPHome instructions for flashing and a configuration file to use with MOES Tuya SK23 nebula lights, or newer SK20 light running on [Tuya CBU](https://docs.libretiny.eu/boards/cbu) module. Compared to the older SK20 model, the SK23 cannot be flashed with [cloudcutter](https://docs.libretiny.eu/docs/flashing/tools/cloudcutter/) (please see note below). You will need to open the device and manually flash it using a USB UART/USB-TTL adapter for the initial setup. After the initial flash, the device can be updated through Wi-Fi.
+
+> [!NOTE] 
+> Some users reported that it is possible to put CBU Based devices in AP mode by either pressing the main button for 10 seconds, and/or 10 times consequitively.  
+>If you managed to put device in AP mode please see if you can flash it using [cloudcutter](https://github.com/tuya-cloudcutter/tuya-cloudcutter) using yml from this repository, and report your results in the issues.
 
 ## Reference
 
