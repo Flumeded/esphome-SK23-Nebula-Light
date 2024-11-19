@@ -1,9 +1,9 @@
-# ESPHome for Tuya SK23/SK20 (CBU) WiFi Nebula Light
+# ESPHome for Tuya SK23/SK20 with CBU WiFi Nebula Light
 
 This repository contains ESPHome instructions for flashing and a configuration file to use with MOES Tuya SK23 nebula lights, or newer SK20 light running on [Tuya CBU](https://docs.libretiny.eu/boards/cbu) module. Compared to the older SK20 model, the SK23 cannot be flashed with [cloudcutter](https://docs.libretiny.eu/docs/flashing/tools/cloudcutter/) (please see note below). You will need to open the device and manually flash it using a USB UART/USB-TTL adapter for the initial setup. After the initial flash, the device can be updated through Wi-Fi.
 
 > [!NOTE] 
-> Some users reported that it is possible to put CBU Based devices in AP mode by either pressing the main button for 10 seconds, and/or 10 times consequitively.  
+> Some users reported that it is possible to put CBU Based devices in AP mode by either pressing the main button for 10 seconds, and/or 10 times consecutively.  
 >If you managed to put device in AP mode please see if you can flash it using [cloudcutter](https://github.com/tuya-cloudcutter/tuya-cloudcutter) using yml from this repository, and report your results in the issues.
 
 ## Reference
@@ -35,7 +35,7 @@ After removing the screws, you can slightly spread the front part of the device 
    ```
 4. Populate `secrets.yml` file.
 
-### 3. Connect Module to UART Programmer
+### 3. Solder Module to UART Programmer
 
 ![UART Connection Diagram](https://docs.libretiny.eu/boards/cbu/cbu.svg)
 
@@ -80,11 +80,8 @@ During flashing, you will be prompted to reset the device. To do this, you need 
 ---
 
 
-## Notes 
+## Notes  
 
-There are some bits of non-working code from SK20 project, so some cleanup is needed.  
-Also, I could not figure how to make reset button to work.  
-
-I hope this project helps you to kickstart your futher research and any contributions are very welcome.
+I hope this project helps you to kickstart your further research and any contributions are very welcome.
 
 Also I have managed to kill my laser during investigation, but were able to find a [drop-in replacement](https://aliexpress.com/i/1005002610306340.html).
