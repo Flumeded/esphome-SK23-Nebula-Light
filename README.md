@@ -16,9 +16,17 @@ This project is heavily based on [SK20 Nebula Light](https://github.com/M4GNV5/e
 
 ### 1. Open Your Device
 
-To open the device, you need to remove three screws hidden under the rubber dampeners. These screws require a long-shaft screwdriver with a (likely) PH2 head.
+To open the device, you need to remove three screws hidden under the rubber dampeners. These screws require a long-shaft screwdriver with a (likely) PH2 head.  
 
-After removing the screws, you can slightly spread the front part of the device (the side with lenses). However, the spine of the device (where the angle feet are located) has two plastic clamps, which require some force to open. Slide a plastic pick from the lens side along the seam as far as possible, then twist the pick to release the clamps.
+![](images/top-view.jpg)
+
+After removing the screws, gently separate the device halves at the charger side to create enough space to insert a pick tool.
+
+![Wedge pick into the side](images/wedged.jpg)
+
+The spine of the device (where the angle feet are located) has four plastic clamps, which require some force to open. Slide a pick along the seam as far as possible, then twist the pick to release the clamps.  
+
+![Slide alongside to open](images/open.jpg)
 
 > [!TIP] 
 > This may feel like you're breaking the device, so proceed cautiously, but be prepared to apply some force.
