@@ -45,6 +45,7 @@ The spine of the device (where the angle feet are located) has four plastic clam
 
 ### 3. Solder Module to UART Programmer
 
+![PCB with CBU](images/cbu.jpg)
 ![UART Connection Diagram](https://docs.libretiny.eu/boards/cbu/cbu.svg)
 
 Connect the following pins to the UART Adapter:
