@@ -59,6 +59,7 @@ Connect the following pins to the UART Adapter:
 | RX   | TX1 (P11) |
 | TX   | RX1 (P10) |
 | GND  | GND       |
+| VCC  | 3V3       |
 
 ### 4. Create a Backup Dump of the Current Firmware
 
